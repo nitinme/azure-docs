@@ -62,7 +62,7 @@ POSIX permissions and auditing in Data Lake Store comes with an overhead that be
 * Faster copying/replication
 * Fewer files to process when updating Data Lake Store POSIX permissions 
 
-Depending on what services and workloads are using the data, a good range to consider for file sizes is 256 MB to 1 GB, ideally not going below 100 MB or above 2 GB. If the file sizes cannot be batched when landing in Data Lake Store, you can have a separate compaction job that combines these files into larger ones. For more information and recommendation on file sizes and organizing the data in Data Lake Store, see [Structure your data set](data-lake-store-performance-tuning-guidance.md#structure-your-data-set). 
+Depending on what services and workloads are using the data, a good size to consider for files is 256 MB or greater. If the file sizes cannot be batched when landing in Data Lake Store, you can have a separate compaction job that combines these files into larger ones. For more information and recommendation on file sizes and organizing the data in Data Lake Store, see [Structure your data set](data-lake-store-performance-tuning-guidance.md#structure-your-data-set). 
 
 ### Large file sizes and potential performance impact 
 
